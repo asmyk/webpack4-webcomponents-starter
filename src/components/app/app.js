@@ -14,12 +14,11 @@ export class MyApp extends LitElement {
 
     render() {
         return html`
-      <style>
-      ${style}
-      </style>
-      <div id="box" @class="${this.uppercase ? 'uppercase' : ''}">
-        Hello World
-      </div>
-    `;
+            <style>
+            ${style}
+            </style>
+            <div id="box" @class="${this.uppercase ? 'uppercase' : ''}">
+                Hello World
+            </div>`;
     }
 }
