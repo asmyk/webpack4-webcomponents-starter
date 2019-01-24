@@ -1,3 +1,3 @@
 'use strict';
 
-import './components/app/app';
+import './modules/main';

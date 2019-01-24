@@ -4,8 +4,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackExcludeAssetsPlugin = require('html-webpack-exclude-assets-plugin');
-const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
-const helperWhitelist = require('./utils/helperWhiteList');
+const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin'); 
 
 const DIST_PATH = path.resolve(path.join(__dirname, '/dist'));
 const SRC_PATH = path.resolve(path.join(__dirname, '/src'));
@@ -137,10 +136,6 @@ const config = {
     entry: `${SRC_PATH}/index.js`,
     module: {
         rules: [
-            {
-                test: /\.pcss$/,
-                use: ['text-loader', 'postcss-loader']
-            },
             {
                 test: /\.js$/,
                 use: [
