@@ -9,8 +9,8 @@ export class App extends LitElement {
 
     render(){
         return html`
-            <main>
-                <slot> Load App here </slot>
+            <main>  
+                <slot>Load app here</slot>
             </main
         `;
     }

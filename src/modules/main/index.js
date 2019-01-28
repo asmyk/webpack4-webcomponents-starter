@@ -1,40 +1,31 @@
 import { LitElement, html, customElement } from '@polymer/lit-element';
-import "./components/app";
-import "./components/footer";
-import "./components/header";
+import "./components/app"; 
 
 @customElement('main-module')
 export class MainModule extends LitElement {
     render() {
         return html`
                 <style>
-                    :host {
-                        display: flex;
-                        flex: 1 0 auto; 
-                        flex-direction: column;
-                        color: var(--text-background);
-                        padding: var(--space);
+                    :host { 
+			            color: #4696e5; 
                     }
-                    @media (min-width: 768px) {
-                        :host {
-                            flex-direction: row;
-                        }
+                    ul {
+                        list-style: none;
                     }
+                
                 </style>
 
-                ${MainModule.headerTemplate}
                 ${MainModule.mainTemplate}
-                ${MainModule.footerTemplate}
             `;
     }
-
-    static get headerTemplate() {
-        return html`<main-header>My header</main-header>`;
-    }
+ 
     static get mainTemplate() {
-        return html`<main-app>Basic app structure based on lit-element's.</main-app>`;
-    }
-    static get footerTemplate() {
-        return html`<main-footer>Footer</main-footer>`;
-    }
+        return html`<main-app>
+                        <h1>VanillaJS starter with Lit-Elements</h1>
+                        <p>This is a simple stater for vanilla JS projects with web components</p>
+                        <ul class="actions">
+                            <li><a href="https://github.com/asmyk" class="button icon fa-chevron-down scrolly">Visit my github: @asmyk</a></li>
+                        </ul>  
+                    </main-app>`;
+    } 
 }
