@@ -1,4 +1,4 @@
-# Project Title
+# VanillaJS starter
 
 This is a simple starter for Vanilla JS projects based on Lit-Elements 3 and Webpack 4. Only most important dependecies are included here.
 
