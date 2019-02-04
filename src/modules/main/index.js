@@ -1,5 +1,5 @@
 import { LitElement, html, customElement } from '@polymer/lit-element';
-import "./components/app"; 
+import "./components/app";
 
 @customElement('main-module')
 export class MainModule extends LitElement {
@@ -7,7 +7,7 @@ export class MainModule extends LitElement {
         return html`
                 <style>
                     :host { 
-			            color: #4696e5; 
+			            color: #33475b; 
                     }
                     ul {
                         list-style: none;
@@ -18,14 +18,11 @@ export class MainModule extends LitElement {
                 ${MainModule.mainTemplate}
             `;
     }
- 
+
     static get mainTemplate() {
-        return html`<main-app>
-                        <h1>VanillaJS starter with Lit-Elements</h1>
-                        <p>This is a simple stater for vanilla JS projects with web components</p>
-                        <ul class="actions">
-                            <li><a href="https://github.com/asmyk" class="button icon fa-chevron-down scrolly">Visit my github: @asmyk</a></li>
-                        </ul>  
-                    </main-app>`;
-    } 
+        return html`
+        <main-app>
+            <login-page></login-page>
+        </main-app>`;
+    }
 }
