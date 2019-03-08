@@ -43,7 +43,7 @@ const devPlugins = [
 ]
 
 const prodPlugins = [
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(),
     new CopyWebpackPlugin(polyfills, assets),
 ]
 
