@@ -38,8 +38,7 @@ npm run build
 
 ## To-Do
 
-There are couple nice to have things:
-* Add EsLint
+There are couple nice to have things: 
 * Add unit tests framework
 * Optimize production build
 

@@ -149,6 +149,11 @@ const config = {
       {
         test: /\.js$/,
         use: [BabelMultiTargetPlugin.loader(), "uglify-template-string-loader"]
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: ["eslint-loader"]
       }
     ]
   },

@@ -1,17 +1,19 @@
 import { LitElement, html, customElement } from '@polymer/lit-element';
-import { styles } from "./app.style.js";
+import styles from './app.style';
 
 @customElement('main-app')
-export class App extends LitElement {
-    static get styles() {
-        return [styles]
-    }
+class App extends LitElement {
+  static get styles() {
+    return [styles];
+  }
 
-    render(){
-        return html`
+  render() {
+    return html`
             <main>  
                 <slot>Load app here</slot>
             </main
         `;
-    }
+  }
 }
+
+export default App;
