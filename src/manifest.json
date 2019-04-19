@@ -1,6 +1,6 @@
 {
-    "name": "VanillaJS Starter",
-    "short_name": "VanillaJS Starter",
+    "name": "Webcomponents Starter",
+    "short_name": "Webcomponents Starter",
     "icons": [{
         "src": "/assets/icons/polymer-skeleton-48x48.png",
         "sizes": "48x48",

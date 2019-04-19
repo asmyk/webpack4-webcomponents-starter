@@ -1,3 +1,3 @@
-'use strict';
+"use strict";
 
-import './modules/main';
+import "./modules/main";
